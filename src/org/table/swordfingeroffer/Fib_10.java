@@ -1,9 +1,9 @@
-package org.table.normal;
+package org.table.swordfingeroffer;
 
 /**
  * Fibonacci
  */
-public class Fib {
+public class Fib_10 {
     //递归
 //    public int fib(int n) {
 //        if (n == 0) {
