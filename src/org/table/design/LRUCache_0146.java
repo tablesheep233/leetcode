@@ -15,6 +15,9 @@ import java.util.Objects;
  *
  */
 public class LRUCache_0146 {
+    /**
+     * 使用双向链表记录数据的使用情况，越靠近头节点最近被用到的越多，当存满时删除最后的数据
+     */
     private Map<Integer, DLinkedNode> cache;
     private DLinkedNode head;
     private DLinkedNode tail;

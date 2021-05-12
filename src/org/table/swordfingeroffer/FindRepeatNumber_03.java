@@ -23,6 +23,7 @@ public class FindRepeatNumber_03 {
 //        throw new RuntimeException();
 //    }
 
+    //将数字放到对应的下标位置，当下标位置的值与当前值相等时就是重复的数字
     public int findRepeatNumber(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             if (i == nums[i]) {

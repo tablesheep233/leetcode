@@ -19,7 +19,7 @@ public class CuttingRope_14 {
         dp[2] = 1;
         dp[3] = 2;
         for (int i = 4; i < n + 1; i++) {
-            //每次剪2，所有的情况
+            //每次剪2以上，所有的情况
             for (int j = 2; j < i ; j++) {
                 //可剪j*dp[i-j]可不剪j*(i-j)，取大的，最后在所有情况中选最大的
                 dp[i] = Math.max(dp[i], Math.max(j * (i - j), j * dp[i - j]));

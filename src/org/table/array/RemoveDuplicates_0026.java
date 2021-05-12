@@ -7,7 +7,10 @@ package org.table.array;
  *
  */
 public class RemoveDuplicates_0026 {
-
+    /**
+     * 双指针思路
+     * 一个指针指 i 在可交换的位置，另一个 j 往前遍历，由于数组是有序的，当前一个与当前值不一样就是新的不同的元素 ，此时将该元素移至可交换的位置，并移动可交换指针，最后可交换指针就是长度
+     */
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;

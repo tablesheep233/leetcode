@@ -15,7 +15,7 @@ public class Decode_1734 {
         int n = encoded.length + 1;
         int[] perm = new int[n];
 
-        //各一位可得最后一个以外的异或
+        //隔一位可得最后一个以外的异或
         int a = 0;
         for (int i = 0; i < encoded.length; i += 2) {
             a ^= encoded[i];

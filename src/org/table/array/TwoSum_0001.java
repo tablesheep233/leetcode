@@ -16,6 +16,9 @@ import java.util.Map;
  * assume 认为，假设
  */
 public class TwoSum_0001 implements Runner {
+    /**
+     * 使用map存储值与下标，遍历数组，查找目标-值 的key是否存在与map中
+     */
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<>();
