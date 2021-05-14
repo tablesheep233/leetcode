@@ -11,7 +11,7 @@ import java.util.*;
  * 左括号必须以正确的顺序闭合。
  *
  */
-public class isValidBrackets_20 {
+public class isValidBrackets_0020 {
     Map<Character, Character> map = new HashMap();
     {
         map.put(')','(');
